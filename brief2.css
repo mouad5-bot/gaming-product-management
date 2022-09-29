@@ -2,7 +2,7 @@
 body{
     font-family: monospace;
 }
-nav{
+nav{ 
     
     background: black;
     height: 80 px;
@@ -37,4 +37,9 @@ img{
     width: 12%;
     margin-top: 10px;
     margin-left: 60px;   
+}
+#prd1{
+    border: ridge;
+    
+    
 }
