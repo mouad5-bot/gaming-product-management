@@ -1,45 +1,100 @@
-
 body{
-    font-family: monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-nav{ 
-    
-    background: black;
-    height: 80 px;
-    width: 100%;
+ul, li, a{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color:black;
+    text-decoration: none;
 }
 
-nav ul {
-    float: right;
-    margin-right: 700px;
+header{
+    margin-top: 0rem;
+    margin-left: 0rem;
+    padding : 17px 3%;
 }
-nav ul li{
+
+
+nav{
+    margin-top: 0rem;
+    margin-left: 2%;
+    width : 96%;
+    display: flex;
+}
+nav a{
+    font-weight:bold;
+}
+
+section{
+    margin-top: 1rem;
+    margin-left: 15%;
+    width : 70%;
+    height : 30rem;
+}
+footer{
+    margin-top: 4rem;
+    margin-left: 5%;
+    width : 90%;
+}
+
+.logo{
+    cursor: pointer;
+    border-radius : 50%;
+    width : 70px;
+    height : 50px;
+}
+
+.headerLinks li {
     display: inline-block;
-    line-height: 80px;
-    margin: 0 15px;
+    padding: 0px 20px;
+}
+.headerLinks li a{
+    transition: all 0.3s ease 0s;
+}
+.headerLinks li a:hover {
+    color : cadetblue;
 }
 
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    text-transform: uppercase;
+.navLinks li {
+    display: inline-block;
+    padding: 0px 20px;
 }
-a.active, a:hover{
-    background: rgb(136, 143, 148);
-    transition: .5s;
+.navLinks li a{
+    transition: all 0.3s ease 0s;
 }
-#hom {
-    margin-left: -400px;
-    display: block;
+.navLinks li a:hover {
+    color : cadetblue;
 }
-img{
-    height: 5%;
-    width: 12%;
-    margin-top: 10px;
-    margin-left: 60px;   
+.productImage{
+    height: 250px;
+    width: 100%;
+    border-radius: 10%;
 }
-#prd1{
-    border: ridge;
-    
-    
+.product{
+    border: 1px solid black;
+    width : 20%;
+    justify-content: center;
+    margin : 5px;
+    padding: 5px;
+    border-radius : 5%;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    font-size: 16px;
+    color:antiquewhite;
+    content: "/\00a0";
+}
+.pric1{
+    color: #7b7b7a;
+}
+.pric3{
+    color: green;
+}
+.blod{
+    font-weight : bold;
+}
+.containerProduct{
+    display : flex;
 }

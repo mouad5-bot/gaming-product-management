@@ -1,70 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
+    <meta name="description" content="Acheter de jeux de notre grande sélection. Jouer à la demande">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="brief2.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>magasin de video</title>
 </head>
+
 <body>
+<header>
+
     <nav>
-        <label>
-             <img src="logo.png" alt="logo of nav bar">
-        </label>
-        <ul>
-            <li><a href="#">Video to rent</a></li>
-            <li><a href="#">Video to buy</a></li>
-            <li><a href="#">Used DVDs</a></li>
-            <li><a href="#">Offers</a></li>
+        <a href="./index.html"><img src="Logo.jpg" class="logo" alt="logo"></a>
+        <ul class="headerLinks">
+            <li> <a href="#">Videos to rent</a></li>
+            <li> <a href="#">Videos to buy</a></li>
+            <li> <a href="#">Used DVDs</a></li>
+            <li> <a href="#">Offers</a></li>
         </ul>
     </nav>
-
-    <nav id="hom">
-       <ul >
-            <li>Home</li>
-            <li>/</li>
-            <li>Used DVDs</li>
-            <li>/</li>
-            <li>Less than £10</li>
+    <div>
+        <ul class="navLinks breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Used DVDs</a></li>
+            <li><a href="#">Less then £10</a></li>
         </ul>
-    </nav> 
-    
-    <h1>Video less than £10</h1>
-    <p>
-        Lorem ipsum dolor sit amet, consecteur adipiscicing elit. In bibendum non 
-        purus quis vestibulum. Pellentesque ultricies quam lacus, ut tristique 
-        sapien tristique et.
-    </p>
+    </div>
+</header>
+<section>
+    <div>
+        <h2>Videos Less the £10</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipicing elit, un bibendum non purus quis <br>
+            vestiblum Penilentesque ultirices quam lacus, ut tristique spien trisque et.</p>
+    </div>
+    <div class="containerProduct">
+        <div class="product">
+            <img class="productImage" src="https://fr.web.img3.acsta.net/pictures/19/08/29/09/30/2548353.jpg" alt="blacklist film">
+            <article>
+                <h3>blacklist film</h3>
+                <p class="pric1"> prix £4</p>
+                <p class="pric2"> prices you pay <strong class="blod">£9.99</strong></p>
+                <p class="pric3"> Your saving £9</p>
+            </article>
+        </div>
+        <div class="product">
+            <img class="productImage" src="https://fr.web.img4.acsta.net/medias/nmedia/00/02/27/50/69198991_af.jpg" alt="jit lee film">
+            <article>
+                <h3>jet lee film</h3>
+                <p class="pric1"> prix</p>
+                <p class="pric2"> prices you pay <strong class="blod">£9.99</strong></p>
+                <p class="pric3"> Your saving £9</p>
+            </article>
+        </div>
+        <div class="product">
+            <img class="productImage" src="https://similaires.com/img_fr/movie/thumb/7b/38006.jpg" alt="FBI film">
+            <article>
+                <h3>FBI film</h3>
+                <p class="pric1"> prix</p>
+                <p class="pric2"> prices you pay <strong class="blod">£9.99</strong></p>
+                <p class="pric3"> Your saving £9</p>
+            </article>
+        </div>
+        <div class="product">
+            <img class="productImage" src="https://fr.web.img5.acsta.net/pictures/17/05/22/16/49/588696.jpg" alt="preson break film">
+            <article>
+                <h3>preson break film</h3>
+                <p class="pric1"> prix</p>
+                <p class="pric2"> prices you pay <strong class="blod">£9.99</strong></p>
+                <p class="pric3"> Your saving £9</p>
+            </article>
+        </div>
+    </div>
+</section>
 
-    <ul id="prd1">
-        <h2>Product Image 1</h2>
-        <h3>Video Title 1</h3> 
-        <p> RRP : £18.99  </p>      
-        <b>price you pay £9.99</b>
-        <p style=color:green;> your saving £9 </p>
-    </ul>
-    <ul id="prd2">
-        <h2>Product Image 2</h2>
-        <h3>Video Title 2</h3> 
-        <p> RRP : £18.99  </p>      
-        <b>price you pay £9.99</b>
-        <p style=color:green;> your saving £9 </p>
-    </ul>
-    <ul id="prd2">
-        <h2>Product Image 3</h2>
-        <h3>Video Title 3</h3> 
-        <p> RRP : £18.99  </p>      
-        <b>price you pay £9.99</b>
-        <p style=color:green;> your saving £9 </p>
-    </ul>
-    <ul id="prd2">
-        <h2>Product Image 4</h2>
-        <h3>Video Title 4</h3> 
-        <p> RRP : £18.99  </p>      
-        <b>price you pay £9.99</b>
-        <p style=color:green;> your saving £9 </p>
-    </ul>
-    
+<footer>
+        <b>Youcode   @2022</b>
+</footer>
+
 </body>
 </html>
