@@ -3,11 +3,21 @@ body{
     margin: 0;
     padding: 0;
 }
-ul, li, a{
+nav ul, li, a{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color:white;
+    text-decoration: none;
+}
+div a{
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     color:black;
     text-decoration: none;
+}
+.breadcrumb{
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 header{
@@ -22,6 +32,7 @@ nav{
     margin-left: 2%;
     width : 96%;
     display: flex;
+    background-color: black;
 }
 nav a{
     font-weight:bold;
@@ -41,7 +52,6 @@ footer{
 
 .logo{
     cursor: pointer;
-    border-radius : 50%;
     width : 70px;
     height : 50px;
 }
@@ -80,12 +90,7 @@ footer{
     padding: 5px;
     border-radius : 5%;
 }
-ul.breadcrumb li+li:before {
-    padding: 8px;
-    font-size: 16px;
-    color:antiquewhite;
-    content: "/\00a0";
-}
+
 .pric1{
     color: #7b7b7a;
 }
