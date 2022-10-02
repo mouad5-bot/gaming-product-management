@@ -4,7 +4,7 @@ body{
     padding: 0;
 }
 nav ul, li, a{
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     color:white;
     text-decoration: none;
@@ -102,4 +102,16 @@ footer{
 }
 .containerProduct{
     display : flex;
+}
+
+@media screen and (max-width: 720px) {
+    
+    nav ul, li, a{
+        font-size: 0.7rem;
+    } 
+    
+    .headerLinks li {
+        display: inline-block;
+        padding: 0px 10px;
+    }
 }
