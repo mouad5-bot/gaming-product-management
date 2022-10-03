@@ -4,6 +4,10 @@ body{
     margin: 0;
     padding: 0;
 }
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+  }
 nav ul, li, a{
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
@@ -17,7 +21,7 @@ div a{
     text-decoration: none;
 }
 .breadcrumb{
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 1rem;
 }
 
@@ -44,11 +48,6 @@ section{
     margin-left: 4rem;
     width : 85%;
     height : 30rem;
-}
-footer{
-    margin-top: 4rem;
-    margin-left: 5%;
-    width : 90%;
 }
 
 .logo{
@@ -86,6 +85,7 @@ footer{
 .product{
     border: 1px solid black;
     width : 20%;
+    height: auto;
     justify-content: center;
     margin : .3px;
     padding: 5px;
@@ -114,12 +114,45 @@ footer{
         text-align: center;
         margin-right: 1rem;
         margin-bottom: .3rem;
+        color: black;
     } 
     
     .headerLinks li {
         display: inline-block;
-        padding: 0px 10px;
+        padding: .5rem 1rem .5rem 1rem;
+        border: .1rem solid black;
+        margin-right: 0rem;
+        border-bottom: .2rem solid black;
+
     }
+
+    .breadcrumb a:nth-child(1){
+        color: blue;
+        text-decoration: underline;
+        margin-left: 1rem;
+    }
+
+    .breadcrumb a:nth-child(3){
+        color: blue;
+        text-decoration: underline;
+    }
+
+    nav{
+        display: block;
+        background-color: linen;
+    }
+
+    .logo{
+        display: block;
+        width: 14rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .breadcrumb a{
+        font-size:small;
+    }
+
     .containerProduct{
         flex-direction: column;
         align-items: center;
@@ -127,18 +160,35 @@ footer{
     }
     .product{
         border: 1px solid black;
-        width : 80%;
-        justify-content: center;
-        margin : .3rem;
+        width : 100%;
+        justify-content: cener;
         padding: .5rem 1rem 0 1rem;
    
-    }
-    nav{
-        display: block;
-    }
+    }  
+}
+
+@media screen and (max-width: 360px) {
     .logo{
-        margin-left: 15rem;
+        width: 8rem;
     }
 
+    .headerLinks li{
+        padding: .1rem .1rem .1rem .1rem;
+        border: .1rem solid black;
+        margin-right: 0rem;
+        border-bottom: .2rem solid black;
+    }
+    .headerLinks li a{
+        display: block;
+        text-align: center;
+    }
+
+    .breadcrumb {
+        margin-left: 0rem;
+    }
+
+    .breadcrumb a{
+        font-size: .4rem;  
+    }
     
 }
