@@ -178,17 +178,12 @@ section{
         margin-right: 0rem;
         border-bottom: .2rem solid black;
     }
-    .headerLinks li a{
-        display: block;
-        text-align: center;
-    }
-
-    .breadcrumb {
-        margin-left: 0rem;
+    .headerLinks{
+        display: flex; 
     }
 
     .breadcrumb a{
-        font-size: .4rem;  
+        font-size: .6rem;  
     }
     
 }
