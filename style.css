@@ -1,14 +1,8 @@
 body{
-    background-color: linen;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
-
-html {
-    font-family: "Lucida Sans", sans-serif;
-  }
 nav ul, li, a{
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
@@ -16,25 +10,20 @@ nav ul, li, a{
     text-decoration: none;
 }
 div a{
-    font-size: 1rem;
+    font-size: 16px;
     font-family: "Montserrat", sans-serif;
     color:black;
     text-decoration: none;
 }
 .breadcrumb{
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-top: 1rem;
-}
-
-.breadcrumb a+a::before{
-    content: "/";
-    margin: 0 1rem 0 1rem; 
 }
 
 header{
     margin-top: 0rem;
     margin-left: 0rem;
-    padding : 1rem 3%;
+    padding : 17px 3%;
 }
 
 
@@ -46,14 +35,19 @@ nav{
     background-color: black;
 }
 nav a{
-    font-weight: bold;
+    font-weight:bold;
 }
 
 section{
     margin-top: 1rem;
-    margin-left: 4rem;
-    width : 85%;
+    margin-left: 15%;
+    width : 70%;
     height : 30rem;
+}
+footer{
+    margin-top: 4rem;
+    margin-left: 5%;
+    width : 90%;
 }
 
 .logo{
@@ -64,19 +58,18 @@ section{
 
 .headerLinks li {
     display: inline-block;
-    padding: 0px 2rem;
+    padding: 0px 20px;
 }
 .headerLinks li a{
     transition: all 0.3s ease 0s;
-    color: aliceblue;
 }
 .headerLinks li a:hover {
-    color : rgb(161, 178, 214);
+    color : cadetblue;
 }
 
 .navLinks li {
     display: inline-block;
-    padding: 0px 1rem;
+    padding: 0px 20px;
 }
 .navLinks li a{
     transition: all 0.3s ease 0s;
@@ -85,16 +78,15 @@ section{
     color : cadetblue;
 }
 .productImage{
-    height: 20rem;
+    height: 250px;
     width: 100%;
     border-radius: 10%;
 }
 .product{
     border: 1px solid black;
     width : 20%;
-    height: auto;
     justify-content: center;
-    margin : .3px;
+    margin : 5px;
     padding: 5px;
     border-radius : 5%;
 }
@@ -110,133 +102,5 @@ section{
 }
 .containerProduct{
     display : flex;
-    justify-content: space-between;
 }
 
-
-@media screen and (max-width: 720px) {
-    
-    nav ul, li, a{
-        font-size: 0.7rem;
-        text-align: center;
-        margin-right: 1rem;
-        margin-bottom: .3rem;
-        color: black;
-    } 
-    
-    .headerLinks li {
-        display: inline-block;
-        padding: .5rem 1rem .5rem 1rem;
-        border: .1rem solid black;
-        margin-right: 0rem;
-        border-bottom: .2rem solid black;
-
-    }
-
-    .breadcrumb a:nth-child(1){
-        color: blue;
-        text-decoration: underline;
-    }
-
-    .breadcrumb a:nth-child(2){
-        color: blue;
-        text-decoration: underline;
-    }
-    
-    .breadcrumb a{
-        font-size:medium;
-    }
-
-    .breadcrumb{
-        margin-left: 3rem;
-    }
-
-    header nav ul.headerLinks a{
-        color: black;
-    }
-    
-    
-    .breadcrumb a+a::before{
-        content: ">";
-        margin-top: .1; 
-    }
-
-    nav{
-        display: block;
-        background-color: linen;
-    }
-
-    .logo{
-        display: block;
-        width: 14rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-
-    .containerProduct{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product{
-        border: 1px solid black;
-        width : 100%;
-        justify-content: cener;
-        padding: .5rem 1rem 0 1rem;
-        margin-bottom: 1rem;
-   
-    }  
-}
-
-@media screen and (max-width: 360px) {
-
-    body{
-        margin-left: -3rem;
-        padding-right: 2.5rem;
-    }
-
-    .container{
-        width: 100%;
-    }
-    .logo{
-        width: 8rem;
-        margin-left: 8rem;
-    }
-
-    .headerLinks li{
-        padding: .1rem .3rem .1rem .1rem;
-        border: .1rem solid black;
-        margin-right: 0rem;
-        border-bottom: .2rem solid black;
-    }
-    .headerLinks{
-        display: flex;
-        margin-left: 0rem; 
-        width: 100%;
-    }
-
-    .breadcrumb a{
-        font-size: .6rem;  
-    }
-    
-    .breadcrumb{
-        margin-left: 3rem;
-    }
-
-    .containerProduct{
-        padding: 1rem;
-    }
-}
-
-@media print {
-    .headerLinks{
-        visibility: hidden;
-    }
-
-    .logo{
-        width: 10rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}   
